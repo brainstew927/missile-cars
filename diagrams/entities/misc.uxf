@@ -1,0 +1,29 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>60</y><w>160</w><h>80</h></coordinates><panel_attributes>Direction
+--
+// this class is used to manage the direction of the game entities.
+// this variable can go from 0 to 359
+num __direction__
+--
+num getDirection();
+// the set run a check that set the final value to be inside the 
+// correct value range
+void setDirection();</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>60</y><w>90</w><h>60</h></coordinates><panel_attributes>entityType
+--
+// this is a enum which contains all the type that a entity can be.
+ball;
+tank;
+// used for temporary objects that could be needed
+null;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>60</y><w>110</w><h>60</h></coordinates><panel_attributes>Squad
+--
+// enum that is used to assign and check the squad in which the player is in
+red;
+blue;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>160</y><w>100</w><h>130</h></coordinates><panel_attributes>Position
+--
+num x:
+num y;
+--
+num getX()
+num getY()
+// some checks need to be ran when the setters are called.
+void setX(num)
+void setY(num)</panel_attributes><additional_attributes></additional_attributes></element></diagram>

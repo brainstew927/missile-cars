@@ -1,0 +1,22 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>50</y><w>140</w><h>140</h></coordinates><panel_attributes>GameEntity
+--
+Direction entityDirection;
+EntityType type;
+Position position;
+// this part is used to calculate the physics of the entity
+num weight
+num speed
+--
+void move();
+void spawn()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>50</y><w>160</w><h>110</h></coordinates><panel_attributes>Tank
+--
+Squad squad;
+// the number of remaining rounds to shoot.
+// the rounds will be reloaded with time automatically
+num numberOfRounds;
+num maxSpeed;
+Direction turretHeading;
+--
+num Shoot()
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
